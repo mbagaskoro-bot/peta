@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- TailwindCss -->
+        <link rel="stylesheet" href="./public/css/style.css" />
+        <!-- AOS -->
+        <link href="./node_modules/aos/dist/aos.css" rel="stylesheet" />
+        <!-- Font Family -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <!-- end Font Family -->
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+        <!-- swiper -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+        <!-- Favicon -->
+        <link
+            rel="shortcut icon"
+            href="./public/img/favicon peta.ico"
+            type="image/x-icon"
+        />
+        <title>Beranda | PETA</title>
+    </head>
+
+    <body class="font-poppins">
+        <!-- Navbar -->
+        <header
+            class="absolute top-0 left-0 z-10 flex w-full items-center bg-white"
+        >
+            <div class="container">
+                <div class="relative flex items-center justify-between">
+                    <a
+                        href="./public/view/beranda/index.html"
+                        class="pr-2 md:pr-2"
+                    >
+                        <img
+                            class="my-2 h-12"
+                            src="./public/img/logoPeta.png"
+                            alt="logoPeta"
+                        />
+                    </a>
+                    <div class="flex items-center">
+                        <button
+                            id="hamburger"
+                            name="hamburger"
+                            type="button"
+                            class="absolute right-2 top-3 block lg:hidden"
+                        >
+                            <span
+                                class="hamburger-line origin-top-left transition duration-300 ease-in-out"
+                            ></span>
+                            <span
+                                class="hamburger-line transition duration-300 ease-in-out"
+                            ></span>
+                            <span
+                                class="hamburger-line origin-top-left transition duration-300 ease-in-out"
+                            ></span>
+                        </button>
+
+                        <nav
+                            id="nav-menu"
+                            class="absolute right-4 top-full hidden w-full max-w-[250px] bg-white py-3 shadow-lg lg:static lg:left-4 lg:top-0 lg:block lg:max-w-full lg:bg-transparent lg:shadow-none"
+                        >
+                            <ul
+                                class="block font-normal lg:flex lg:items-center"
+                            >
+                                <li class="grup">
+                                    <a
+                                        href="./public/view/beranda/index.html"
+                                        class="mx-2 block p-2 hover:rounded-lg hover:bg-primary hover:text-white"
+                                    >
+                                        Beranda
+                                    </a>
+                                </li>
+                                <li class="grup">
+                                    <a
+                                        href="./public/view/peta/peta.html"
+                                        class="mx-2 block p-2 hover:rounded-lg hover:bg-primary hover:text-white"
+                                    >
+                                        Tentang PETA
+                                    </a>
+                                </li>
+                                <li class="grup">
+                                    <a
+                                        href="./public/view/tbc/tbc.html"
+                                        class="mx-2 block p-2 hover:rounded-lg hover:bg-primary hover:text-white"
+                                    >
+                                        Info TBC
+                                    </a>
+                                </li>
+                                <li class="grup">
+                                    <a
+                                        href="./public/view/kasus/kasus-tbc.html"
+                                        class="mx-2 block p-2 hover:rounded-lg hover:bg-primary hover:text-white"
+                                    >
+                                        Kasus TBC
+                                    </a>
+                                </li>
+                                <li class="grup">
+                                    <a
+                                        href="./public/view/artikel/artikel.html"
+                                        class="mx-2 block p-2 hover:rounded-lg hover:bg-primary hover:text-white"
+                                    >
+                                        Artikel
+                                    </a>
+                                </li>
+                                <li class="grup">
+                                    <a
+                                        href="./public/view/galeri/galeri.html"
+                                        class="mx-2 block p-2 hover:rounded-lg hover:bg-primary hover:text-white"
+                                    >
+                                        Galeri
+                                    </a>
+                                </li>
+                                <li class="grup">
+                                    <a
+                                        href="./public/view/kontak/kontak.html"
+                                        class="mx-2 block p-2 hover:rounded-lg hover:bg-primary hover:text-white"
+                                    >
+                                        Kontak
+                                    </a>
+                                </li>
+                                <li class="grup">
+                                    <a
+                                        href="./public/view/penjualan/penjualan.html"
+                                        class="ml-2 block rounded-lg bg-button p-3 text-white hover:bg-primary"
+                                    >
+                                        Penjualan Karya
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End Navbar -->
+
+        <!-- Banner -->
+        <div class="mt-16 bg-primary">
+            <div class="container">
+                <div
+                    id="carouselExampleCrossfade"
+                    class="slide carousel carousel-fade relative py-10"
+                    data-bs-ride="carousel"
+                >
+                    <div
+                        class="carousel-indicators absolute bottom-0 left-0 right-0 mb-2 flex justify-center p-0"
+                    >
+                        <button
+                            type="button"
+                            data-bs-target="#carouselExampleCrossfade"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="Slide 1"
+                        ></button>
+                        <button
+                            type="button"
+                            data-bs-target="#carouselExampleCrossfade"
+                            data-bs-slide-to="1"
+                            aria-label="Slide 2"
+                        ></button>
+                        <button
+                            type="button"
+                            data-bs-target="#carouselExampleCrossfade"
+                            data-bs-slide-to="2"
+                            aria-label="Slide 3"
+                        ></button>
+                    </div>
+                    <div class="carousel-inner relative w-full overflow-hidden">
+                        <div class="active carousel-item float-left w-full">
+                            <img
+                                src="./public/img/Bennerpeta1.png"
+                                class="block w-full rounded-md"
+                                alt="PETABenner1"
+                            />
+                        </div>
+                        <div class="carousel-item float-left w-full">
+                            <img
+                                src="./public/img/BennerPeta2.png"
+                                class="block w-full rounded-md"
+                                alt="PETABenner2"
+                            />
+                        </div>
+                        <div class="carousel-item float-left w-full">
+                            <img
+                                src="./public/img/BennerPeta3.png"
+                                class="block w-full rounded-md"
+                                alt="PETABenner3"
+                            />
+                        </div>
+                    </div>
+                    <button
+                        class="carousel-control-prev absolute bottom-0 left-0 top-4 flex items-center justify-center border-0 p-0 text-center hover:no-underline hover:outline-none focus:no-underline focus:outline-none"
+                        type="button"
+                        data-bs-target="#carouselExampleCrossfade"
+                        data-bs-slide="prev"
+                    >
+                        <span
+                            class="carousel-control-prev-icon inline-block bg-no-repeat hover:bg-black hover:py-6"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                        class="carousel-control-next absolute bottom-0 right-0 top-4 flex items-center justify-center border-0 p-0 text-center hover:no-underline hover:outline-none focus:no-underline focus:outline-none"
+                        type="button"
+                        data-bs-target="#carouselExampleCrossfade"
+                        data-bs-slide="next"
+                    >
+                        <span
+                            class="carousel-control-next-icon inline-block bg-no-repeat hover:bg-black hover:py-6"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- banner -->
+
+        <!-- team -->
+        <section class="flex flex-col items-center border-b py-2">
+            <div class="container">
+                <ul class="flex justify-center gap-7 overflow-x-auto md:gap-40">
+                    <li class="shrink-0">
+                        <img
+                            class="h-10 sm:h-16 md:h-20 lg:h-24"
+                            data-aos="flip-up"
+                            data-aos-duration="3000"
+                            data-aos-offset="200"
+                            src="./public/img/logogermas.png"
+                            alt="sobattb"
+                        />
+                    </li>
+                    <li class="shrink-0">
+                        <img
+                            class="h-10 sm:h-16 md:h-20 lg:h-24"
+                            data-aos="flip-up"
+                            data-aos-duration="3000"
+                            data-aos-offset="200"
+                            src="./public/img/logo-tosstb.png"
+                            alt="endtb"
+                        />
+                    </li>
+                    <li class="shrink-0">
+                        <img
+                            class="h-10 sm:h-16 md:h-20 lg:h-24"
+                            data-aos="flip-up"
+                            data-aos-duration="3000"
+                            data-aos-offset="200"
+                            src="./public/img/logoKemenkes.png"
+                            alt="kemenkes"
+                        />
+                    </li>
+                    <li class="shrink-0">
+                        <img
+                            class="h-10 sm:h-16 md:h-20 lg:h-24"
+                            data-aos="flip-up"
+                            data-aos-duration="3000"
+                            data-aos-offset="200"
+                            src="./public/img/logoEndtb.png"
+                            alt="tosstb"
+                        />
+                    </li>
+                    <li class="shrink-0">
+                        <img
+                            class="h-10 sm:h-16 md:h-20 lg:h-24"
+                            data-aos="flip-up"
+                            data-aos-duration="3000"
+                            data-aos-offset="200"
+                            src="./public/img/logoSobattb.png"
+                            alt="germas"
+                        />
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- End Team -->
+
+        <!-- Tentang PETA -->
+        <div class="mb-20 text-center">
+            <div class="container">
+                <h2 class="mt-10 text-4xl font-bold">Tentang PETA</h2>
+                <div data-aos="fade-up">
+                    <p
+                        class="mt-8 flex px-4 text-justify text-base sm:mx-16 md:px-20 md:text-xl lg:mx-28 xl:mx-36"
+                    >
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Eveniet nisi repellat placea blanditiis enim vero!
+                        Voluptatibus quibusdam natus quidem nesciunt
+                        reprehenderit labore magnam in saepe dolore blanditiis
+                        similique, at officia quod doloribus iste error dolor
+                        debitis architecto aperiam, deleniti nulla dolores ayam
+                        ati.
+                    </p>
+                    <div class="mt-5">
+                        <a
+                            class="mt-8 rounded-[10px] text-base font-medium text-button hover:bg-primary hover:px-4 hover:py-2 hover:text-white md:text-xl"
+                            href="./public/view/peta/peta.html"
+                            >Selengkapnya</a
+                        >
+                    </div>
+                    <iframe
+                        class="mx-auto mt-8 h-[14rem] w-[23rem] rounded-md shadow-lg sm:h-[17rem] sm:w-[27rem] md:h-[21rem] md:w-[35rem] lg:h-[23rem] lg:w-[38rem] xl:h-[30rem] xl:w-[50rem]"
+                        src="https://www.youtube.com/embed/r09z4a4V4xw"
+                        title="YouTube video player"
+                        frameborder="10"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    >
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <!-- END Tentang PETA -->
+
+        <!-- Konten Karya dan TB -->
+        <section class="relative py-14">
+            <div class="2xl:container">
+                <div
+                    class="absolute top-0 -z-10 h-full w-[90%] bg-secondary lg:w-[95%] 2xl:w-[67%]"
+                ></div>
+                <div
+                    data-aos="fade-right"
+                    class="mb-28 flex flex-col-reverse content-start items-start gap-6 lg:flex-row lg:items-center"
+                >
+                    <div
+                        class="flex h-full w-[20rem] md:h-full md:w-[40rem] lg:h-[28rem] lg:w-[82rem]"
+                    >
+                        <img
+                            class="h-full w-full rounded-r-lg shadow-xl"
+                            src="./public/img/uang.png"
+                            alt="Penjualan Karya"
+                        />
+                    </div>
+                    <div class="mx-2 text-left lg:mx-0">
+                        <h2 class="text-4xl font-semibold">
+                            Penjualan Hasil Karya
+                        </h2>
+                        <p class="mt-7 mr-[8rem] text-lg font-medium">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Eget turpis ed massa neque vitae nisi nascetur
+                            adipiscing suspendisse.
+                        </p>
+                        <div class="mt-3">
+                            <a
+                                class="mt-8 rounded-[10px] bg-white px-4 py-2 text-base font-medium text-button hover:bg-primary hover:text-white md:text-xl"
+                                href="./public/view/penjualan/penjualan.html"
+                                >Selengkapnya</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div
+                    data-aos="fade-down-right"
+                    class="flex flex-col-reverse items-end gap-6 lg:flex-row-reverse lg:items-center"
+                >
+                    <div
+                        class="flex h-full w-[20rem] md:h-full md:w-[40rem] lg:h-[28rem] lg:w-[82rem]"
+                    >
+                        <img
+                            class="h-full w-full rounded-l-lg shadow-xl"
+                            src="./public/img/uang.png"
+                            alt="Kasus TBC"
+                        />
+                    </div>
+                    <div class="mx-2 text-right lg:mx-0">
+                        <h2 class="text-4xl font-semibold">Kasus TBC</h2>
+                        <p class="mt-7 ml-[8rem] text-lg font-medium">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Eget turpis ed massa neque vitae nisi nascetur
+                            adipiscing suspendisse.
+                        </p>
+                        <div class="mt-3">
+                            <a
+                                class="mt-8 rounded-[10px] bg-white px-4 py-2 text-base font-medium text-button hover:bg-primary hover:text-white md:text-xl"
+                                href="./public/view/kasus/kasus-tbc.html"
+                                >Selengkapnya</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Konten Karya dan TB -->
+
+        <!-- Artikel -->
+        <section class="py-10">
+            <div class="container">
+                <h2 class="mt-10 text-center text-4xl font-bold">Artikel</h2>
+                <div class="mt-8 grid gap-4 lg:grid-cols-10">
+                    <div
+                        class="p-4 md:mb-7 md:p-0 lg:col-span-6 lg:col-start-6 lg:row-span-full"
+                    >
+                        <div class="flex justify-center">
+                            <div
+                                class="rounded-lg bg-white shadow-xl"
+                                data-aos="fade-right"
+                            >
+                                <img
+                                    src="./public/img/virus1.png"
+                                    class="h-[17rem] w-full rounded-t-lg md:h-[30rem] lg:h-[25rem]"
+                                    alt="artikel1"
+                                />
+                                <a
+                                    href="#!"
+                                    data-mdb-ripple="true"
+                                    data-mdb-ripple-color="blue"
+                                >
+                                    <div class="px-7 py-14">
+                                        <h5
+                                            class="mb-2 text-2xl font-medium text-gray-900"
+                                        >
+                                            Lorem ipsum dolor, sit amet
+                                            consectetur adipisicing elit.
+                                        </h5>
+                                        <p
+                                            class="hidden text-base text-gray-600 md:block"
+                                        >
+                                            Ditulis Oleh: GUA
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="p-4 md:p-0 lg:col-span-5 lg:col-start-1 lg:row-start-1"
+                    >
+                        <div
+                            class="mb-5 flex justify-center lg:mb-9 xl:mb-10 2xl:mb-6"
+                        >
+                            <div
+                                class="rounded-lg bg-white shadow-lg md:flex md:flex-row lg:flex-col"
+                                data-aos="fade-right"
+                            >
+                                <div class="flex">
+                                    <img
+                                        src="./public/img/artikel2.png"
+                                        class="w-40 rounded-l-lg md:h-44 md:w-48"
+                                        alt="artikel2"
+                                    />
+                                    <a
+                                        href="#!"
+                                        data-mdb-ripple="true"
+                                        data-mdb-ripple-color="black"
+                                    >
+                                        <div
+                                            class="flex flex-col justify-start p-6"
+                                        >
+                                            <h5
+                                                class="mb-2 text-lg font-medium text-gray-900 md:text-2xl"
+                                            >
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                            </h5>
+                                            <p
+                                                class="hidden text-base text-gray-600 md:block"
+                                            >
+                                                Ditulis Oleh: GUA
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="mb-5 flex justify-center lg:mb-9 xl:mb-10 2xl:mb-6"
+                        >
+                            <div
+                                class="rounded-lg bg-white shadow-lg md:flex md:flex-row lg:flex-col"
+                                data-aos="fade-right"
+                            >
+                                <div class="flex">
+                                    <img
+                                        src="./public/img/artikel3.png"
+                                        class="w-40 rounded-l-lg md:h-44 md:w-48"
+                                        alt="artikel3"
+                                    />
+                                    <a
+                                        href="#!"
+                                        data-mdb-ripple="true"
+                                        data-mdb-ripple-color="black"
+                                    >
+                                        <div
+                                            class="flex flex-col justify-start p-6"
+                                        >
+                                            <h5
+                                                class="mb-2 text-lg font-medium text-gray-900 md:text-2xl"
+                                            >
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing.
+                                            </h5>
+                                            <p
+                                                class="hidden text-base text-gray-600 md:block"
+                                            >
+                                                Ditulis Oleh: GUA
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="mb-5 flex justify-center lg:mb-9 xl:mb-10 2xl:mb-6"
+                        >
+                            <div
+                                class="rounded-lg bg-white shadow-lg md:flex md:flex-row lg:flex-col"
+                                data-aos="fade-right"
+                            >
+                                <div class="flex">
+                                    <img
+                                        src="./public/img/virus1.png"
+                                        class="w-40 rounded-l-lg md:h-44 md:w-48"
+                                        alt="artike4"
+                                    />
+                                    <a
+                                        href="#!"
+                                        data-mdb-ripple="true"
+                                        data-mdb-ripple-color="black"
+                                    >
+                                        <div
+                                            class="flex flex-col justify-start p-6"
+                                        >
+                                            <h5
+                                                class="mb-2 text-lg font-medium text-gray-900 md:text-2xl"
+                                            >
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing.
+                                            </h5>
+                                            <p
+                                                class="hidden text-base text-gray-600 md:block"
+                                            >
+                                                Ditulis Oleh: GUA
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END Artikel -->
+
+        <!-- Galeri -->
+        <section class="mb-12 bg-gradient-to-b from-secondary to-white">
+            <div class="container">
+                <div class="px-5">
+                    <h2
+                        class="mt-10 border-t pt-10 text-center text-2xl font-bold md:text-4xl"
+                    >
+                        Galeri
+                    </h2>
+                    <p
+                        class="mt-5 flex justify-center px-10 text-center md:px-40 md:text-xl lg:px-60"
+                    >
+                        Galeri PETA, Lorem ipsum is a placeholder text commonly
+                        used to demonstrate the visual form of a document or a
+                        typeface without relying on meaningful content.
+                    </p>
+                    <div class="flex justify-around">
+                        <a
+                            class="mt-8 rounded-[10px] px-4 py-2 text-base font-medium text-button hover:bg-primary hover:text-white md:text-xl"
+                            href="./public/view/peta/peta.html"
+                            >Selengkapnya</a
+                        >
+                    </div>
+                    <div
+                        class="my-8 grid grid-cols-1 justify-items-center md:grid-cols-2 md:gap-6 lg:grid-cols-3"
+                    >
+                        <div class="flex px-4 md:col-span-1">
+                            <button
+                                type="button"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModalXl"
+                                data-mdb-ripple="true"
+                                data-mdb-ripple-color="light"
+                            >
+                                <img
+                                    class="mt-8 rounded-lg lg:mt-0"
+                                    src="./public/img/galery-1.png"
+                                    alt=""
+                                    data-aos="zoom-in-up"
+                                />
+                            </button>
+                            <div
+                                class="fade modal fixed top-0 left-0 hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+                                id="exampleModalXl"
+                                tabindex="-1"
+                                aria-labelledby="exampleModalXlLabel"
+                                aria-modal="true"
+                                role="dialog"
+                            >
+                                <div
+                                    class="modal-dialog modal-xl pointer-events-none relative w-auto"
+                                >
+                                    <div
+                                        class="modal-content pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-lg outline-none"
+                                    >
+                                        <div
+                                            class="modal-header flex flex-shrink-0 items-center justify-between rounded-t-md border-b border-gray-200 p-4"
+                                        >
+                                            <h5
+                                                class="text-xl font-medium leading-normal text-gray-800"
+                                                id="exampleModalXlLabel"
+                                            >
+                                                Extra large modal
+                                            </h5>
+                                            <button
+                                                type="button"
+                                                class="btn-close box-content h-4 w-4 rounded-none border-none p-1 text-black opacity-50 hover:text-black hover:no-underline hover:opacity-80 focus:opacity-100 focus:shadow-none focus:outline-none"
+                                                data-bs-dismiss="modal"
+                                                aria-label="Close"
+                                            ></button>
+                                        </div>
+                                        <div class="modal-body relative p-4">
+                                            <div
+                                                class="grid grid-cols-1 lg:grid-cols-2"
+                                            >
+                                                <div
+                                                    class="flex justify-center"
+                                                >
+                                                    <img
+                                                        class="h-full"
+                                                        src="./public/img/galery-1.png"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="mt-4">
+                                                    <p>
+                                                        Lorem ipsum dolor sit
+                                                        amet consectetur
+                                                        adipisicing elit. Quis
+                                                        provident nulla at,
+                                                        tenetur beatae ipsa ad
+                                                        repellat temporibus
+                                                        eligendi officiis maxime
+                                                        minus molestias in
+                                                        laborum est
+                                                        exercitationem eveniet!
+                                                        Dolorem, explicabo.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex px-4 md:col-span-1">
+                            <button
+                                type="button"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModalXl"
+                                data-mdb-ripple="true"
+                                data-mdb-ripple-color="light"
+                            >
+                                <img
+                                    class="mt-8 rounded-lg lg:mt-0"
+                                    src="./public/img/galery-1.png"
+                                    alt=""
+                                    data-aos="zoom-in-up"
+                                />
+                            </button>
+                            <div
+                                class="fade modal fixed top-0 left-0 hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+                                id="exampleModalXl"
+                                tabindex="-1"
+                                aria-labelledby="exampleModalXlLabel"
+                                aria-modal="true"
+                                role="dialog"
+                            >
+                                <div
+                                    class="modal-dialog modal-xl pointer-events-none relative w-auto"
+                                >
+                                    <div
+                                        class="modal-content pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-lg outline-none"
+                                    >
+                                        <div
+                                            class="modal-header flex flex-shrink-0 items-center justify-between rounded-t-md border-b border-gray-200 p-4"
+                                        >
+                                            <h5
+                                                class="text-xl font-medium leading-normal text-gray-800"
+                                                id="exampleModalXlLabel"
+                                            >
+                                                Extra large modal
+                                            </h5>
+                                            <button
+                                                type="button"
+                                                class="btn-close box-content h-4 w-4 rounded-none border-none p-1 text-black opacity-50 hover:text-black hover:no-underline hover:opacity-80 focus:opacity-100 focus:shadow-none focus:outline-none"
+                                                data-bs-dismiss="modal"
+                                                aria-label="Close"
+                                            ></button>
+                                        </div>
+                                        <div class="modal-body relative p-4">
+                                            <div
+                                                class="grid grid-cols-1 lg:grid-cols-2"
+                                            >
+                                                <div
+                                                    class="flex justify-center"
+                                                >
+                                                    <img
+                                                        class="h-full"
+                                                        src="./public/img/galery-1.png"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="mt-4">
+                                                    <p>
+                                                        Lorem ipsum dolor sit
+                                                        amet consectetur
+                                                        adipisicing elit. Quis
+                                                        provident nulla at,
+                                                        tenetur beatae ipsa ad
+                                                        repellat temporibus
+                                                        eligendi officiis maxime
+                                                        minus molestias in
+                                                        laborum est
+                                                        exercitationem eveniet!
+                                                        Dolorem, explicabo.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex px-4 md:col-span-2 lg:col-span-1">
+                            <button
+                                type="button"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModalXl"
+                                data-mdb-ripple="true"
+                                data-mdb-ripple-color="light"
+                            >
+                                <img
+                                    class="mt-8 rounded-lg lg:mt-0"
+                                    src="./public/img/galery-1.png"
+                                    alt=""
+                                    data-aos="zoom-in-up"
+                                />
+                            </button>
+                            <div
+                                class="fade modal fixed top-0 left-0 hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+                                id="exampleModalXl"
+                                tabindex="-1"
+                                aria-labelledby="exampleModalXlLabel"
+                                aria-modal="true"
+                                role="dialog"
+                            >
+                                <div
+                                    class="modal-dialog modal-xl pointer-events-none relative w-auto"
+                                >
+                                    <div
+                                        class="modal-content pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-lg outline-none"
+                                    >
+                                        <div
+                                            class="modal-header flex flex-shrink-0 items-center justify-between rounded-t-md border-b border-gray-200 p-4"
+                                        >
+                                            <h5
+                                                class="text-xl font-medium leading-normal text-gray-800"
+                                                id="exampleModalXlLabel"
+                                            >
+                                                Extra large modal
+                                            </h5>
+                                            <button
+                                                type="button"
+                                                class="btn-close box-content h-4 w-4 rounded-none border-none p-1 text-black opacity-50 hover:text-black hover:no-underline hover:opacity-80 focus:opacity-100 focus:shadow-none focus:outline-none"
+                                                data-bs-dismiss="modal"
+                                                aria-label="Close"
+                                            ></button>
+                                        </div>
+                                        <div class="modal-body relative p-4">
+                                            <div
+                                                class="grid grid-cols-1 lg:grid-cols-2"
+                                            >
+                                                <div
+                                                    class="flex justify-center"
+                                                >
+                                                    <img
+                                                        class="h-full"
+                                                        src="./public/img/galery-1.png"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="mt-4">
+                                                    <p>
+                                                        Lorem ipsum dolor sit
+                                                        amet consectetur
+                                                        adipisicing elit. Quis
+                                                        provident nulla at,
+                                                        tenetur beatae ipsa ad
+                                                        repellat temporibus
+                                                        eligendi officiis maxime
+                                                        minus molestias in
+                                                        laborum est
+                                                        exercitationem eveniet!
+                                                        Dolorem, explicabo.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END galeri -->
+
+        <!-- Footer -->
+        <footer class="items-center bg-gray-200 py-5">
+            <div class="container">
+                <div class="grid grid-cols-2 gap-4 lg:grid-cols-3">
+                    <div
+                        class="col-start-1 row-start-1 flex place-self-center md:gap-4"
+                    >
+                        <a class="h-6 w-6 md:h-7 md:w-7" href="#"
+                            ><img
+                                src="./public/img/Facebook.png"
+                                class="md:pt-0"
+                                alt=""
+                        /></a>
+                        <a class="h-6 w-6 md:h-7 md:w-7" href="#"
+                            ><img
+                                src="./public/img/Instagram.png"
+                                class="md:pt-0"
+                                alt=""
+                        /></a>
+                        <a class="h-6 w-6 md:h-7 md:w-7" href="#"
+                            ><img
+                                src="./public/img/YouTube.png"
+                                class="md:pt-0"
+                                alt=""
+                        /></a>
+                        <a class="h-6 w-6 md:h-7 md:w-7" href="#"
+                            ><img
+                                src="./public/img/LinkedIn.png"
+                                class="md:pt-0"
+                                alt=""
+                        /></a>
+                        <a class="h-6 w-6 md:h-7 md:w-7" href="#"
+                            ><img
+                                src="./public/img/Twitter Squared.png"
+                                class="md:pt-0"
+                                alt=""
+                        /></a>
+                        <a class="h-6 w-6 md:h-7 md:w-7" href="#"
+                            ><img
+                                src="./public/img/TikTok.png"
+                                class="md:pt-0"
+                                alt=""
+                        /></a>
+                    </div>
+                    <div
+                        class="col-span-2 mt-5 flex place-self-center text-center lg:col-span-1 lg:mt-0"
+                    >
+                        <p class="text-sm font-medium md:text-base">
+                            &copy; 2022 Pejuang Tanggung PETA TB-RO
+                        </p>
+                    </div>
+                    <div
+                        class="col-start-2 row-start-1 mx-32 flex items-center justify-center gap-2 place-self-center rounded-lg bg-slate-100 px-4 py-2 pt-2 text-sm md:mx-0 md:text-base lg:col-start-3"
+                    >
+                        <img
+                            src="./public/img/indo-icon.png"
+                            class="w-5"
+                            alt=""
+                        />
+                        <p class="font-medium">Indonesia</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- END Footer -->
+
+        <script src="./node_modules/aos/dist/aos.js"></script>
+        <script src="./node_modules/tw-elements/dist/js/index.min.js"></script>
+        <script src="./public/js/main.js"></script>
+    </body>
+</html>
