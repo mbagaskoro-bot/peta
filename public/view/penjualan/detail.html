@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!-- TailwindCss -->
+       <link rel="stylesheet" href="../../css/style.css">
+       <!-- AOS -->
+       <link href="../../../node_modules/aos/dist/aos.css" rel="stylesheet">
+       <!-- Font Family -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+       <!-- end Font Family -->
+       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+       <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+       <!-- swiper -->
+       <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+       <!-- Favicon -->
+       <link rel="shortcut icon" href="../../img/favicon peta.ico" type="image/x-icon">
+       <title>Beranda | PETA</title>
+</head>
+
+<body class="font-poppins">
+       <!-- Navbar -->
+       <header class="absolute top-0 left-0 z-10 flex items-center w-full bg-white">
+              <div class="container">
+                     <div class="relative flex items-center justify-between">
+                            <a href="../beranda/index.html" class="pr-2 md:pr-2">
+                                   <img class="h-12 my-2" src="../../img/logoPeta.png" alt="logoPeta">
+                            </a>
+                            <div class="flex items-center">
+                                   <button id="hamburger" name="hamburger" type="button"
+                                          class="absolute block right-2 top-3 lg:hidden">
+                                          <span
+                                                 class="transition duration-300 ease-in-out origin-top-left hamburger-line"></span>
+                                          <span class="transition duration-300 ease-in-out hamburger-line"></span>
+                                          <span
+                                                 class="transition duration-300 ease-in-out origin-top-left hamburger-line"></span>
+                                   </button>
+
+                                   <nav id="nav-menu"
+                                          class="hidden absolute py-3 bg-white shadow-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:left-4 lg:max-w-full lg:shadow-none lg:top-0">
+                                          <ul class="block font-normal lg:flex lg:items-center">
+                                                 <li class="grup">
+                                                        <a href="../beranda/index.html"
+                                                               class="block p-2 mx-2 hover:bg-primary hover:rounded-lg">
+                                                               Beranda
+                                                        </a>
+                                                 </li>
+                                                 <li class="grup">
+                                                        <a href="../peta/peta.html"
+                                                               class="block p-2 mx-2 hover:bg-primary hover:rounded-lg">
+                                                               Tentang PETA
+                                                        </a>
+                                                 </li>
+                                                 <li class="grup">
+                                                        <a href="../tbc/tbc.html"
+                                                               class="block p-2 mx-2 hover:bg-primary hover:rounded-lg">
+                                                               Info TBC
+                                                        </a>
+                                                 </li>
+                                                 <li class="grup">
+                                                        <a href="../kasus/kasus-tbc.html"
+                                                               class="block p-2 mx-2 hover:bg-primary hover:rounded-lg">
+                                                               Kasus TBC
+                                                        </a>
+                                                 </li>
+                                                 <li class="grup">
+                                                        <a href="../artikel/artikel.html"
+                                                               class="block p-2 mx-2 hover:bg-primary hover:rounded-lg">
+                                                               Artikel
+                                                        </a>
+                                                 </li>
+                                                 <li class="grup">
+                                                        <a href="../galeri/galeri.html"
+                                                               class="block p-2 mx-2 hover:bg-primary hover:rounded-lg">
+                                                               Galeri
+                                                        </a>
+                                                 </li>
+                                                 <li class="grup">
+                                                        <a href="../kontak/kontak.html"
+                                                               class="block p-2 mx-2 hover:bg-primary hover:rounded-lg">
+                                                               Kontak
+                                                        </a>
+                                                 </li>
+                                                 <li class="grup">
+                                                        <a href="../penjualan/penjualan.html"
+                                                               class="block p-3 ml-2 text-white rounded-lg bg-button hover:bg-primary">
+                                                               Penjualan Karya
+                                                        </a>
+                                                 </li>
+                                          </ul>
+                                   </nav>
+                            </div>
+                     </div>
+              </div>
+       </header>
+       <!-- End Navbar -->
+
+       <!--Detail-->
+       <section class="mt-16">
+              <div class="container">
+                     <div class="grid grid-cols-12 gap-8 pb-10 border-b border-black md:mx-2 lg:mx-0">
+                            <div class="col-span-12 mx-2 md:col-span-6 md:mx-0">
+                                   <div class="product-div">
+                                          <div class="product-div-left">
+                                                 <div class="img-container">
+                                                        <img src="../../img/penjualan4.png"
+                                                               class="ecommerce-gallery-main-img active w-100 lg:mt-10"
+                                                               alt="penjualan">
+                                                 </div>
+                                                 <div
+                                                        class="grid grid-cols-4 gap-4 py-3 mt-2 hover-container row shadow-5">
+                                                        <div class="mt-1 col-3 hover:scale-125">
+                                                               <img src="../../img/penjualan4.png" alt="Gallery image 1"
+                                                                      class="h-12 active xl:h-24 xl:w-36 lg:h-14 md:h-20" />
+                                                        </div>
+                                                        <div class="mt-1 col-3 hover:scale-125">
+                                                               <img src="../../img/penjualan1.png" alt="Gallery image 2"
+                                                                      class="h-12 xl:h-24 xl:w-36 lg:h-14 md:h-20" />
+                                                        </div>
+                                                        <div class="mt-1 col-3 hover:scale-125">
+                                                               <img src="../../img/penjualan2.png" alt="Gallery image 3"
+                                                                      class="h-12 xl:h-24 xl:w-36 lg:h-14 md:h-20" />
+                                                        </div>
+                                                        <div class="mt-1 col-3 hover:scale-125">
+                                                               <img src="../../img/penjualan1.png" alt="Gallery image 4"
+                                                                      class="h-12 xl:h-24 xl:w-36 lg:h-14 md:h-20" />
+                                                        </div>
+                                                 </div>
+                                          </div>
+                                   </div>
+                            </div>
+                            <div class="col-span-12 mx-2 md:col-span-6 md:mx-0">
+                                   <p class="text-4xl font-semibold lg:mt-10 ">
+                                          Nasi Goreng Kambing
+                                   </p>
+                                   <div class="flex items-center gap-2 mt-6 md:mt-3">
+                                          <img src="../../img/user.png" class="w-8 md:h-9" alt="user">
+                                          <p class="text-lg font-medium">Ilham Ramadhan, kemanggisan</p>
+                                   </div>
+                                   <div
+                                          class="flex pb-4 mt-6 text-2xl font-medium border-b md:mt-2 border-gray lg:pb-5">
+                                          <p>Rp. 25.000 / Unit</p>
+                                   </div>
+                                   <div class="flex justify-between text-lg font-medium border-b">
+                                          <div class="flex mt-2 border-b border-gray">
+                                                 <p class="pb-2 border-b border-blue-500 ">
+                                                        Deskripsi
+                                                 </p>
+                                          </div>
+                                          <div class="flex gap-3">
+                                                 <p class="mt-2 text-gray-400 md:text-black">kontak penjual:</p>
+                                                 <a href="#">
+                                                        <img src="../../img/wa.png"
+                                                               class="h-10 py-2 md:h-11 md:py-1 hover:scale-125"
+                                                               alt="whatsapp">
+                                                 </a>
+                                                 <a href="#">
+                                                        <img src="../../img/Instagram.png"
+                                                               class="h-10 py-2 md:h-11 md:py-1 hover:scale-125"
+                                                               alt="Instagram">
+                                                 </a>
+                                                 <a href="#">
+                                                        <img src="../../img/Facebook.png"
+                                                               class="h-10 py-2 md:h-11 md:py-1 hover:scale-125"
+                                                               alt="Facebook">
+                                                 </a>
+                                          </div>
+                                   </div>
+                                   <div class="mt-8 text-sm font-medium text-justify md:text-lg">
+                                          <p>
+                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at felis
+                                                 in mi tincidunt facilisis at dictum turpis. Nam
+                                                 aliquet nunc ut nulla euismod, eget tempus nunc tristique. Donec cursus
+                                                 accumsan justo, id venenatis leo mollis nec. In
+                                                 sed diam quis dolor tempor dignissim. Cras tincidunt felis urna, a
+                                                 sagittis erat consectetur ut. Sed et sapien quam.
+                                                 Nullam lobortis pretium
+                                          </p>
+                                          <p class="mt-6">
+                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                                                 natus reiciendis fuga magnam sapiente suscipit necessitatibus itaque
+                                                 similique vero tempore.
+                                          </p>
+                                   </div>
+                            </div>
+                     </div>
+              </div>
+       </section>
+       <section class="flex flex-col mb-20 md:mb-60">
+              <p class="my-3 text-2xl font-medium ml-9">
+                     Produk lainnya dari Ilham Ramadhan
+              </p>
+              <div class="grid items-center grid-cols-12">
+                     <div class="col-span-12 mr-0.5 ml-9">
+                            <ul class="flex pr-0 overflow-x-auto gap-9 snap-x snap-mandatory">
+                                   <li class="shrink-0 snap-center">
+                                          <div
+                                                 class="overflow-hidden rounded shadow-lg w-60 bg-gradient-to-b from-teal-100 to-cyan-100">
+                                                 <a href="">
+                                                        <img class="h-48" src="../../img/penjualan2.png">
+                                                        <div class="px-2 py-4">
+                                                               <div class="mb-2 text-2xl font-medium">The Coldest Sunset
+                                                               </div>
+                                                               <div class="mb-2 text-lg font-semibold">RP 35.000</div>
+                                                        </div>
+                                                 </a>
+                                          </div>
+                                   </li>
+                                   <li class="shrink-0 snap-center">
+                                          <div
+                                                 class="overflow-hidden rounded shadow-lg w-60 bg-gradient-to-b from-teal-100 to-cyan-100">
+                                                 <a href="">
+                                                        <img class="h-48" src="../../img/penjualan2.png">
+                                                        <div class="px-2 py-4">
+                                                               <div class="mb-2 text-2xl font-medium">The Coldest Sunset
+                                                               </div>
+                                                               <div class="mb-2 text-lg font-semibold">RP 35.000</div>
+                                                        </div>
+                                                 </a>
+                                          </div>
+                                   </li>
+                                   <li class="shrink-0 snap-center">
+                                          <div
+                                                 class="overflow-hidden rounded shadow-lg w-60 bg-gradient-to-b from-teal-100 to-cyan-100">
+                                                 <a href="">
+                                                        <img class="h-48" src="../../img/penjualan2.png">
+                                                        <div class="px-2 py-4">
+                                                               <div class="mb-2 text-2xl font-medium">The Coldest Sunset
+                                                               </div>
+                                                               <div class="mb-2 text-lg font-semibold">RP 35.000</div>
+                                                        </div>
+                                                 </a>
+                                          </div>
+                                   </li>
+                                   <li class="shrink-0 snap-center">
+                                          <div
+                                                 class="overflow-hidden rounded shadow-lg w-60 bg-gradient-to-b from-teal-100 to-cyan-100">
+                                                 <a href="">
+                                                        <img class="h-48" src="../../img/penjualan2.png">
+                                                        <div class="px-2 py-4">
+                                                               <div class="mb-2 text-2xl font-medium">The Coldest Sunset
+                                                               </div>
+                                                               <div class="mb-2 text-lg font-semibold">RP 35.000</div>
+                                                        </div>
+                                                 </a>
+                                          </div>
+                                   </li>
+                                   <li class="shrink-0 snap-center">
+                                          <div
+                                                 class="overflow-hidden rounded shadow-lg w-60 bg-gradient-to-b from-teal-100 to-cyan-100">
+                                                 <a href="">
+                                                        <img class="h-48" src="../../img/penjualan2.png">
+                                                        <div class="px-2 py-4">
+                                                               <div class="mb-2 text-2xl font-medium">The Coldest Sunset
+                                                               </div>
+                                                               <div class="mb-2 text-lg font-semibold">RP 35.000</div>
+                                                        </div>
+                                                 </a>
+                                          </div>
+                                   </li>
+                                   <li class="shrink-0 snap-center">
+                                          <div
+                                                 class="overflow-hidden rounded shadow-lg w-60 bg-gradient-to-b from-teal-100 to-cyan-100">
+                                                 <a href="">
+                                                        <img class="h-48" src="../../img/penjualan2.png">
+                                                        <div class="px-2 py-4">
+                                                               <div class="mb-2 text-2xl font-medium">The Coldest Sunset
+                                                               </div>
+                                                               <div class="mb-2 text-lg font-semibold">RP 35.000</div>
+                                                        </div>
+                                                 </a>
+                                          </div>
+                                   </li>
+                                   <li class="shrink-0 snap-center">
+                                          <div
+                                                 class="overflow-hidden rounded shadow-lg w-60 bg-gradient-to-b from-teal-100 to-cyan-100">
+                                                 <a href="">
+                                                        <img class="h-48" src="../../img/penjualan2.png">
+                                                        <div class="px-2 py-4">
+                                                               <div class="mb-2 text-2xl font-medium">The Coldest Sunset
+                                                               </div>
+                                                               <div class="mb-2 text-lg font-semibold">RP 35.000</div>
+                                                        </div>
+                                                 </a>
+                                          </div>
+                                   </li>
+                                   <li class="shrink-0 snap-center">
+                                          <div
+                                                 class="overflow-hidden rounded shadow-lg w-60 bg-gradient-to-b from-teal-100 to-cyan-100">
+                                                 <a href="">
+                                                        <img class="h-48" src="../../img/penjualan2.png">
+                                                        <div class="px-2 py-4">
+                                                               <div class="mb-2 text-2xl font-medium">The Coldest Sunset
+                                                               </div>
+                                                               <div class="mb-2 text-lg font-semibold">RP 35.000</div>
+                                                        </div>
+                                                 </a>
+                                          </div>
+                                   </li>
+                            </ul>
+                     </div>
+              </div>
+       </section>
+       <!-- End Detail -->
+
+       <!-- Footer -->
+       <footer class="items-center py-5 bg-gray-200">
+              <div class="container">
+                     <div class="grid grid-cols-2 gap-4 lg:grid-cols-3">
+                            <div class="flex col-start-1 row-start-1 md:gap-4 place-self-center">
+                                   <a class="w-6 h-6 md:w-7 md:h-7" href="#"><img src="../../img/Facebook.png"
+                                                 class="md:pt-0" alt=""></a>
+                                   <a class="w-6 h-6 md:w-7 md:h-7" href="#"><img src="../../img/Instagram.png"
+                                                 class="md:pt-0" alt=""></a>
+                                   <a class="w-6 h-6 md:w-7 md:h-7" href="#"><img src="../../img/YouTube.png"
+                                                 class="md:pt-0" alt=""></a>
+                                   <a class="w-6 h-6 md:w-7 md:h-7" href="#"><img src="../../img/LinkedIn.png"
+                                                 class="md:pt-0" alt=""></a>
+                                   <a class="w-6 h-6 md:w-7 md:h-7" href="#"><img src="../../img/Twitter Squared.png"
+                                                 class="md:pt-0" alt=""></a>
+                                   <a class="w-6 h-6 md:w-7 md:h-7" href="#"><img src="../../img/TikTok.png"
+                                                 class="md:pt-0" alt=""></a>
+                            </div>
+                            <div class="flex col-span-2 mt-5 text-center lg:mt-0 lg:col-span-1 place-self-center">
+                                   <p class="text-sm font-medium md:text-base">
+                                          &copy; 2022 Pejuang Tanggung PETA TB-RO
+                                   </p>
+                            </div>
+                            <div
+                                   class="flex items-center justify-center col-start-2 row-start-1 gap-2 px-4 py-2 pt-2 mx-32 text-sm rounded-lg lg:col-start-3 place-self-center md:mx-0 md:text-base bg-slate-100">
+                                   <img src="../../img/indo-icon.png" class="w-5" alt="">
+                                   <p class="font-medium">Indonesia</p>
+                            </div>
+                     </div>
+              </div>
+       </footer>
+       <!-- END Footer -->
+
+
+       <script src="../../../node_modules/aos/dist/aos.js"></script>
+       <script src="../../../node_modules/tw-elements/dist/js/index.min.js"></script>
+       <script src="../../js/main.js"></script>
+</body>
+
+</html>

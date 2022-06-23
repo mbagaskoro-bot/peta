@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!-- TailwindCss -->
+       <link rel="stylesheet" href="../../css/style.css">
+       <!-- AOS -->
+       <link href="../../../node_modules/aos/dist/aos.css" rel="stylesheet">
+       <!-- Font Family -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+       <!-- end Font Family -->
+       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+       <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+       <!-- swiper -->
+       <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+       <!-- Favicon -->
+       <link rel="shortcut icon" href="../../img/favicon peta.ico" type="image/x-icon">
+       <title>Hasil Karya | PETA</title>
+</head>
+
+<body class="font-poppins">
+       <!-- Navbar -->
+       <header class="absolute top-0 left-0 z-10 flex items-center w-full bg-white">
+              <div class="container">
+                     <div class="relative flex items-center justify-between">
+                            <a href="../beranda/index.html" class="pr-2 md:pr-2">
+                                   <img class="h-12 my-2" src="../../img/logoPeta.png" alt="logoPeta">
+                            </a>
+                            <div class="flex items-center">
+                                   <button id="hamburger" name="hamburger" type="button"
+                                          class="absolute block right-2 top-3 lg:hidden">
+                                          <span
+                                                 class="transition duration-300 ease-in-out origin-top-left hamburger-line"></span>
+                                          <span class="transition duration-300 ease-in-out hamburger-line"></span>
+                                          <span
+                                                 class="transition duration-300 ease-in-out origin-top-left hamburger-line"></span>
+                                   </button>
+
+                                   <nav id="nav-menu"
+                                          class="hidden absolute py-3 bg-white shadow-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:left-4 lg:max-w-full lg:shadow-none lg:top-0">
+                                          <ul class="block font-normal lg:flex lg:items-center">
+                                                 <li class="grup">
+                                                        <a href="../beranda/index.html"
+                                                               class="block p-2 mx-2 hover:bg-primary hover:rounded-lg">
+                                                               Beranda
+                                                        </a>
+                                                 </li>
+                                                 <li class="grup">
+                                                        <a href="../peta/peta.html"
+                                                               class="block p-2 mx-2 hover:bg-primary hover:rounded-lg">
+                                                               Tentang PETA
+                                                        </a>
+                                                 </li>
+                                                 <li class="grup">
+                                                        <a href="../tbc/tbc.html"
+                                                               class="block p-2 mx-2 hover:bg-primary hover:rounded-lg">
+                                                               Info TBC
+                                                        </a>
+                                                 </li>
+                                                 <li class="grup">
+                                                        <a href="../kasus/kasus-tbc.html"
+                                                               class="block p-2 mx-2 hover:bg-primary hover:rounded-lg">
+                                                               Kasus TBC
+                                                        </a>
+                                                 </li>
+                                                 <li class="grup">
+                                                        <a href="../artikel/artikel.html"
+                                                               class="block p-2 mx-2 hover:bg-primary hover:rounded-lg">
+                                                               Artikel
+                                                        </a>
+                                                 </li>
+                                                 <li class="grup">
+                                                        <a href="../galeri/galeri.html"
+                                                               class="block p-2 mx-2 hover:bg-primary hover:rounded-lg">
+                                                               Galeri
+                                                        </a>
+                                                 </li>
+                                                 <li class="grup">
+                                                        <a href="../kontak/kontak.html"
+                                                               class="block p-2 mx-2 hover:bg-primary hover:rounded-lg">
+                                                               Kontak
+                                                        </a>
+                                                 </li>
+                                                 <li class="grup">
+                                                        <a href="../penjualan/penjualan.html"
+                                                               class="block p-3 ml-2 text-white rounded-lg bg-button hover:bg-primary">
+                                                               Penjualan Karya
+                                                        </a>
+                                                 </li>
+                                          </ul>
+                                   </nav>
+                            </div>
+                     </div>
+              </div>
+       </header>
+       <!-- End Navbar -->
+
+       <!-- Banner -->
+       <section class="pt-16 pb-16 border-b-2">
+              <div class="container relative">
+                     <div class="grid items-center grid-cols-1 gap-4 lg:grid-cols-12">
+                            <div class="col-span-1 lg:col-span-5 lg:col-start-2">
+                                   <div class="mx-4 text-white pb-7 md:pb-0 md:pr-2">
+                                          <p class="pt-8 text-2xl font-semibold md:pt-12 lg:pt-0 md:text-4xl">
+                                                 Penjualan Hasil Karya
+                                          </p>
+                                          <p class="z-10 pt-4 mr-8 text-justify font-poppins md:text-xl">
+                                                 Lorem ipsum dolor sit amet,
+                                                 consectetur
+                                                 adipisicing elit. Necessitatibus vero vel, ad
+                                                 distinctio illo possimus maiores totam quaerat numquam, laboriosam
+                                                 magni nisi ea
+                                                 impedit labore quo minus, maxime harum a?
+                                          </p>
+                                   </div>
+                            </div>
+                            <div class="grid justify-end col-auto lg:col-span-7 lg:col-start-7 pt-9">
+                                   <div class="w-[20rem] md:w-[40rem] lg:w-auto md:h-full rounded-xl shadow-xl">
+                                          <img class="rounded-xl h-[15rem] md:h-[30rem]"
+                                                 src="../../img/penjualan-bg.png" alt="banner">
+                                   </div>
+                            </div>
+                            <div
+                                   class="bg-primary overflow-hidden absolute top-0 w-[95%] lg:w-[70%] h-[85%] -z-10 rounded-sm">
+                            </div>
+                     </div>
+              </div>
+       </section>
+       <!-- END Banner -->
+
+       <!-- konten -->
+       <section class="mb-14 mt-7">
+              <div class="2xl:container">
+                     <div class="relative flex justify-center pt-2 mx-auto text-gray-600 md:mb-14">
+                            <div class="mb-3 xl:w-96">
+                                   <div class="relative flex flex-wrap items-stretch w-full mb-4 input-group">
+                                          <input type="search"
+                                                 class="form-control relative flex-auto min-w-0 block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded-lg transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                                 placeholder="cari nama produk/penjual" aria-label="Search"
+                                                 aria-describedby="button-addon2">
+                                          <button class="btn inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out rounded-lg items-center"
+                                                 type="button" id="button-addon2">
+                                                 <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                                        data-icon="search" class="w-4" role="img"
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path fill="currentColor"
+                                                               d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
+                                                        </path>
+                                                 </svg>
+                                          </button>
+                                   </div>
+                            </div>
+                     </div>
+                     <div class="flex flex-col items-center gap-2 mb-12 md:flex-row-reverse bg-secondary md:mb-7">
+                            <div class="w-full md:w-1/2">
+                                   <img src="../../img/penjualan2.png"
+                                          class="grid h-[18rem] w-full sm:h-[27rem] xl:h-full place-items-center"
+                                          alt="">
+                            </div>
+                            <div class="w-full py-8 text-center md:py-0 md:w-1/2">
+                                   <p class="text-lg font-semibold md:text-xl lg:text-4xl">
+                                          Nasi
+                                          Goreng
+                                          Kambing</p>
+                                   <p class="mx-2 text-sm font-medium lg:mx-36 md:mt-4 lg:mt-5">
+                                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                                          Lorem ipsum dolor sit amet, coing
+                                   </p>
+                                   <p class="pb-2 mt-5 text-base font-medium border-b border-black lg:text-lg md:mx-28">
+                                          Rp
+                                          25000 /
+                                          unit
+                                   </p>
+                                   <div class="flex items-center justify-center gap-2 mt-3">
+                                          <img src="../../img/user.png" class="w-8 md:h-9" alt="">
+                                          <p class="text-base font-medium lg:text-lg">Ilham Ramadhan, kemanggisan</p>
+                                   </div>
+                                   <div class="mt-5">
+                                          <a class="px-4 py-2 text-base font-medium rounded-[10px] text-button bg-white hover:bg-primary hover:text-white lg:text-xl"
+                                                 href="../penjualan/detail.html">Selengkapnya</a>
+                                   </div>
+                            </div>
+                     </div>
+                     <div class="flex flex-col items-center gap-2 mb-12 md:flex-row bg-secondary md:mb-7">
+                            <div class="w-full md:w-1/2">
+                                   <img src="../../img/penjualan1.png"
+                                          class="grid h-[18rem] w-full sm:h-[27rem] xl:h-full place-items-center"
+                                          alt="">
+                            </div>
+                            <div class="w-full py-8 text-center md:py-0 md:w-1/2">
+                                   <p class="text-lg font-semibold md:text-xl lg:text-4xl">
+                                          Nasi
+                                          Goreng
+                                          Kambing</p>
+                                   <p class="mx-2 text-sm font-medium lg:mx-36 md:mt-4 lg:mt-5">
+                                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                                          Lorem ipsum dolor sit amet, coing
+                                   </p>
+                                   <p class="pb-2 mt-5 text-base font-medium border-b border-black lg:text-lg md:mx-28">
+                                          Rp
+                                          25000 /
+                                          unit
+                                   </p>
+                                   <div class="flex items-center justify-center gap-2 mt-3">
+                                          <img src="../../img/user.png" class="w-8 md:h-9" alt="">
+                                          <p class="text-base font-medium lg:text-lg">Ilham Ramadhan, kemanggisan</p>
+                                   </div>
+                                   <div class="mt-5">
+                                          <a class="px-4 py-2 text-base font-medium rounded-[10px] text-button bg-white hover:bg-primary hover:text-white lg:text-xl"
+                                                 href="../penjualan/detail.html">Selengkapnya</a>
+                                   </div>
+                            </div>
+                     </div>
+                     <div class="flex flex-col items-center gap-2 mb-12 md:flex-row-reverse bg-secondary md:mb-7">
+                            <div class="w-full md:w-1/2">
+                                   <img src="../../img/penjualan3.png"
+                                          class="grid h-[18rem] w-full sm:h-[27rem] xl:h-full place-items-center"
+                                          alt="">
+                            </div>
+                            <div class="w-full py-8 text-center md:py-0 md:w-1/2">
+                                   <p class="text-lg font-semibold md:text-xl lg:text-4xl">
+                                          Nasi
+                                          Goreng
+                                          Kambing</p>
+                                   <p class="mx-2 text-sm font-medium lg:mx-36 md:mt-4 lg:mt-5">
+                                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                                          Lorem ipsum dolor sit amet, coing
+                                   </p>
+                                   <p class="pb-2 mt-5 text-base font-medium border-b border-black lg:text-lg md:mx-28">
+                                          Rp
+                                          25000 /
+                                          unit
+                                   </p>
+                                   <div class="flex items-center justify-center gap-2 mt-3">
+                                          <img src="../../img/user.png" class="w-8 md:h-9" alt="">
+                                          <p class="text-base font-medium lg:text-lg">Ilham Ramadhan, kemanggisan</p>
+                                   </div>
+                                   <div class="mt-5">
+                                          <a class="px-4 py-2 text-base font-medium rounded-[10px] text-button bg-white hover:bg-primary hover:text-white lg:text-xl"
+                                                 href="../penjualan/detail.html">Selengkapnya</a>
+                                   </div>
+                            </div>
+                     </div>
+                     <div class="flex flex-col items-center gap-2 mb-12 md:flex-row bg-secondary md:mb-7">
+                            <div class="w-full md:w-1/2">
+                                   <img src="../../img/penjualan4.png"
+                                          class="grid h-[18rem] w-full sm:h-[27rem] xl:h-full place-items-center"
+                                          alt="">
+                            </div>
+                            <div class="w-full py-8 text-center md:py-0 md:w-1/2">
+                                   <p class="text-lg font-semibold md:text-xl lg:text-4xl">
+                                          Nasi
+                                          Goreng
+                                          Kambing</p>
+                                   <p class="mx-2 text-sm font-medium lg:mx-36 md:mt-4 lg:mt-5">
+                                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                                          Lorem ipsum dolor sit amet, coing
+                                   </p>
+                                   <p class="pb-2 mt-5 text-base font-medium border-b border-black lg:text-lg md:mx-28">
+                                          Rp
+                                          25000 /
+                                          unit
+                                   </p>
+                                   <div class="flex items-center justify-center gap-2 mt-3">
+                                          <img src="../../img/user.png" class="w-8 md:h-9" alt="">
+                                          <p class="text-base font-medium lg:text-lg">Ilham Ramadhan, kemanggisan</p>
+                                   </div>
+                                   <div class="mt-5">
+                                          <a class="px-4 py-2 text-base font-medium rounded-[10px] text-button bg-white hover:bg-primary hover:text-white lg:text-xl"
+                                                 href="../penjualan/detail.html">Selengkapnya</a>
+                                   </div>
+                            </div>
+                     </div>
+                     <div class="flex justify-center mt-10 font-semibold">
+                            <div aria-label="Page navigation example">
+                                   <ul class="flex list-style-none">
+                                          <li class="page-item"><a
+                                                        class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 focus:shadow-none"
+                                                        href="penjualan3.html" aria-label="Previous">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                 </a></li>
+                                          <li class="page-item">
+                                                 <a class="page-link relative block py-1.5 px-3 rounded border-0  bg-transparent outline-none transition-all duration-300 text-gray-800 bg-gray-200 focus:shadow-none"
+                                                        href="penjualan.html">
+                                                        1
+                                                 </a>
+                                          </li>
+                                          <li class="page-item">
+                                                 <a class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+                                                        href="penjualan2.html">
+                                                        2
+                                                 </a>
+                                          </li>
+                                          <li class="page-item">
+                                                 <a class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+                                                        href="penjualan3.html">3
+                                                 </a>
+                                          </li>
+                                          <li class="page-item"><a
+                                                        class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+                                                        href="penjualan.html" aria-label="Next">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                 </a></li>
+                                   </ul>
+                            </div>
+                     </div>
+              </div>
+       </section>
+       <!-- End konten -->
+
+       <!-- Footer -->
+       <footer class="items-center py-5 bg-gray-200">
+              <div class="container">
+                     <div class="grid grid-cols-2 gap-4 lg:grid-cols-3">
+                            <div class="flex col-start-1 row-start-1 md:gap-4 place-self-center">
+                                   <a class="w-6 h-6 md:w-7 md:h-7" href="#"><img src="../../img/Facebook.png"
+                                                 class="md:pt-0" alt=""></a>
+                                   <a class="w-6 h-6 md:w-7 md:h-7" href="#"><img src="../../img/Instagram.png"
+                                                 class="md:pt-0" alt=""></a>
+                                   <a class="w-6 h-6 md:w-7 md:h-7" href="#"><img src="../../img/YouTube.png"
+                                                 class="md:pt-0" alt=""></a>
+                                   <a class="w-6 h-6 md:w-7 md:h-7" href="#"><img src="../../img/LinkedIn.png"
+                                                 class="md:pt-0" alt=""></a>
+                                   <a class="w-6 h-6 md:w-7 md:h-7" href="#"><img src="../../img/Twitter Squared.png"
+                                                 class="md:pt-0" alt=""></a>
+                                   <a class="w-6 h-6 md:w-7 md:h-7" href="#"><img src="../../img/TikTok.png"
+                                                 class="md:pt-0" alt=""></a>
+                            </div>
+                            <div class="flex col-span-2 mt-5 text-center lg:mt-0 lg:col-span-1 place-self-center">
+                                   <p class="text-sm font-medium md:text-base">
+                                          &copy; 2022 Pejuang Tanggung PETA TB-RO
+                                   </p>
+                            </div>
+                            <div
+                                   class="flex items-center justify-center col-start-2 row-start-1 gap-2 px-4 py-2 pt-2 mx-32 text-sm rounded-lg lg:col-start-3 place-self-center md:mx-0 md:text-base bg-slate-100">
+                                   <img src="../../img/indo-icon.png" class="w-5" alt="">
+                                   <p class="font-medium">Indonesia</p>
+                            </div>
+                     </div>
+              </div>
+       </footer>
+       <!-- End Footer -->
+
+       <script src="../../../node_modules/aos/dist/aos.js"></script>
+       <script src="../../../node_modules/tw-elements/dist/js/index.min.js"></script>
+       <script src="../../js/main.js"></script>
+</body>
+
+</html>
